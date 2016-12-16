@@ -1,0 +1,166 @@
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\ApplicationInsights.config
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\csc.exe
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\vbc.exe
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\VBCSCompiler.exe
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\facematchingdemo.dll.config
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\facematchingdemo.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\facematchingdemo.pdb
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Antlr3.Runtime.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\EntityFramework.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\EntityFramework.SqlServer.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.Web.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.ProjectOxford.Face.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Newtonsoft.Json.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Owin.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.Helpers.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.Mvc.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.Optimization.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.Razor.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.Razor.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\WebGrease.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.Web.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Newtonsoft.Json.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.Helpers.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.Mvc.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.Optimization.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.Razor.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.Razor.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Antlr3.Runtime.pdb
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\EntityFramework.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\EntityFramework.SqlServer.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\obj\Debug\facematchingdemo.csprojResolveAssemblyReference.cache
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\obj\Debug\facematchingdemo.dll
+C:\Users\rajanikanth.eda\Documents\Visual Studio 2015\Projects\facematchingdemo\facematchingdemo\obj\Debug\facematchingdemo.pdb
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\ApplicationInsights.config
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\csc.exe
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\System.Collections.Immutable.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\System.Reflection.Metadata.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\vbc.exe
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\VBCSCompiler.exe
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\roslyn\VBCSCompiler.exe.config
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\facematchingdemo.dll.config
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\facematchingdemo.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\facematchingdemo.pdb
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Antlr3.Runtime.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\EntityFramework.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\EntityFramework.SqlServer.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.DependencyCollector.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.Web.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.WindowsServer.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.ApplicationInsights.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.Core.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Cookies.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Facebook.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Google.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.OAuth.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Twitter.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.ProjectOxford.Face.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Web.Infrastructure.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Newtonsoft.Json.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Owin.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.Helpers.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.Mvc.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.Optimization.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.Razor.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.Deployment.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.Razor.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\WebGrease.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.DependencyCollector.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.Web.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AI.WindowsServer.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.ApplicationInsights.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Newtonsoft.Json.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.Helpers.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.Mvc.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.Optimization.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.Razor.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.Deployment.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\System.Web.WebPages.Razor.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Antlr3.Runtime.pdb
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\EntityFramework.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\EntityFramework.SqlServer.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.Core.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Facebook.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Cookies.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.OAuth.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Google.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.Twitter.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\obj\Debug\facematchingdemo.csprojResolveAssemblyReference.cache
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\obj\Debug\facematchingdemo.dll
+C:\work@accenture\facematchingdemo\facematchingdemo\facematchingdemo\obj\Debug\facematchingdemo.pdb

@@ -1,0 +1,17 @@
+﻿
+    .headertext {
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  color:white;
+
+}
+
+    
+a.headertext:hover,
+a.headertext:focus {
+  color:white;
+  text-decoration: none;
+  cursor: pointer;
+}
