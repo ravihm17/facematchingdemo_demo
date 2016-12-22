@@ -9,6 +9,26 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using facematchingdemo.Models;
+using System.IO;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Collections.Specialized;
+using System.Runtime.CompilerServices;
+using Microsoft.ProjectOxford.Face;
+//using Microsoft.ProjectOxford.Face.Contract;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Collections;
+using System.Web.UI.WebControls;
+using System.Text;
+using System.Web.UI;
+using System.Runtime.InteropServices;
+using System.Security;
+using System.Security.AccessControl;
+using System.Net.Http;
+using System.Threading;
 
 namespace facematchingdemo.Controllers
 {
@@ -17,6 +37,12 @@ namespace facematchingdemo.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+
+        private string subscriptionKeyValue = "1235624638c943148c82ca5c79ccbbef";
+        //private string subscriptionKeyValue = "b68b237b109c4eebab3bfa49817d35f4";
+        public string _selectedFile; public string _faceListName = string.Empty;
+        public int MatchedImgcount = 0;
+        private string Errormsg = string.Empty;
 
         public AccountController()
         {
@@ -51,6 +77,145 @@ namespace facematchingdemo.Controllers
                 _userManager = value;
             }
         }
+
+        public async Task<string> FindSimilarImages()
+        {
+
+            //Creation of facelist and sending all the images(the images to which we are going to do match) to the facelist
+
+            _faceListName = Guid.NewGuid().ToString(); // Generating a unique group-id for the entire images 
+            var faceServiceClients = new FaceServiceClient(subscriptionKeyValue); //calling the Face API using subscription key 
+            try
+            {
+                await faceServiceClients.CreateFaceListAsync(_faceListName, _faceListName, "face_Images"); //Calling the API service'CreateFaceListAsync' to create a facelist with id/name as  _faceListName.
+            }
+
+            catch (FaceAPIException ex)
+            {
+                //ViewData["ExceptionMsg"] = ex.ErrorMessage;
+                // ViewBag.MyExceptionString = ex.ErrorMessage;
+                // return ViewBag.MyExceptionString;
+                //string errorMsg = ex.ErrorMessage;
+                //return RedirectToAction("Error", "Home", new { errorMsg: errorMsg });
+
+                Errormsg = ex.ErrorMessage;
+                return RedirectToAction("Error", "Home", new { Errormsg = Errormsg }).ToString();
+
+            }
+
+            DirectoryInfo DirInfo = new DirectoryInfo(@"C:\Image");
+
+            Dictionary<string, string> DictionaryListofPersistanceIDAndImagePath = new Dictionary<string, string>();//Dictionary entry for storing the persistance id returned for each image from the Face API service
+
+            try
+            {
+                foreach (var file in DirInfo.GetFiles("*.jpg"))
+                {
+                    string imgPath = @"C:\Image\" + file.ToString();
+                    FileStream fStream = new FileStream(imgPath, FileMode.Open, FileAccess.Read);
+                    var faces = await faceServiceClients.AddFaceToFaceListAsync(_faceListName, fStream); //Adding of each image content to the created facelist in the Face API using the service 'AddFaceToFaceListAsync'
+                    DictionaryListofPersistanceIDAndImagePath.Add(faces.PersistedFaceId.ToString(), imgPath); //Storing the PersistedFaceId of the image returned by the Face API service and image path in dictionary
+
+                }
+            }
+            //End
+            catch (FaceAPIException ex)
+            {
+                ViewData["ExceptionMsg"] = ex.ErrorMessage;
+
+            }
+
+
+            // Sending  and matching the captured image with the images contained in the facelist
+
+            //  string CapturedImgName = Server.MapPath("~/Image/CapturedImg.jpg");
+            string CapturedImgName = Server.MapPath("~/test.jpg");
+
+            string[] MatchedImgpath; //int MatchedImgcount = 0;
+
+            using (var fileStream = System.IO.File.OpenRead(CapturedImgName))
+            {
+                var faceServiceClient = new FaceServiceClient(subscriptionKeyValue);
+                var faces = await faceServiceClient.DetectAsync(fileStream); //Calling the Face API 'DetectAsync' to detect the captured image by sending the content of the captured image
+                                                                             // After call it will return a faceid to the captured image 
+                foreach (var f in faces)
+                {
+                    var faceId = f.FaceId; //Retrive the face id of the captured image
+                    const int requestCandidatesCount = 20; // The number of the more confidece images to be rturned.Most matched image have more confidence value.
+                                                           //confidence value is assigned by the Face API service based on the match.
+                    try
+                    {
+                        var result = await faceServiceClient.FindSimilarAsync(faceId, _faceListName, requestCandidatesCount); // Matching the captured image with images by sending  faceId and _faceListName to the Face API 'FindSimilarAsync'
+                                                                                                                              //The variable result contains the matched image's PersistedFaceId 
+                        MatchedImgpath = new string[requestCandidatesCount];    //Declare an array with size 'requestCandidatesCount' to store the matched images path
+                                                                                // int MatchedImgcount = 0;
+                        foreach (var fr in result) //Loop through the PersistedFaceId of matched faces
+                        {
+
+                            if (fr.Confidence >= 0.8) //To check whether the confidence value of the matched image is >=0.8
+                            {
+                                if (DictionaryListofPersistanceIDAndImagePath.ContainsKey(fr.PersistedFaceId.ToString()))//To check whether the Persistance id is present in the dictionary
+                                                                                                                         //if present retrive the curresponding image-path of that PersistedFaceId. 
+                                {
+                                    MatchedImgpath[MatchedImgcount] = DictionaryListofPersistanceIDAndImagePath[fr.PersistedFaceId.ToString()]; //Store the image-path in an array.This array contains all the matched image path which have confidence-value >=0.8
+                                    MatchedImgcount = MatchedImgcount + 1;
+                                }
+                            }
+
+                        }
+
+                    }
+
+                    catch (FaceAPIException ex)
+                    {
+                        ViewData["ExceptionMsg"] = ex.ErrorMessage;
+                    }
+
+                }
+            }
+            if (MatchedImgcount != 0)
+            {
+                return "found";
+            }
+            else
+            {
+                return "notfound";
+            }
+            //End
+
+
+        }
+        public void Capture()
+        {
+            var stream = Request.InputStream;
+            string dump;
+
+            using (var reader = new StreamReader(stream))
+                dump = reader.ReadToEnd();
+
+            var path = Server.MapPath("~/test.jpg");
+            System.IO.File.WriteAllBytes(path, String_To_Bytes2(dump));
+
+        }
+
+
+
+        private byte[] String_To_Bytes2(string strInput)
+        {
+            int numBytes = (strInput.Length) / 2;
+            byte[] bytes = new byte[numBytes];
+
+            for (int x = 0; x < numBytes; ++x)
+            {
+                bytes[x] = Convert.ToByte(strInput.Substring(x * 2, 2), 16);
+            }
+
+            return bytes;
+
+        }
+
+
+
 
         //
         // GET: /Account/Login
@@ -141,7 +306,13 @@ namespace facematchingdemo.Controllers
         {
             return View();
         }
+        public ActionResult Logout()
+        {
+            return View();
+        }
 
+
+      
         //
         // POST: /Account/Register
         [HttpPost]
@@ -481,5 +652,8 @@ namespace facematchingdemo.Controllers
             }
         }
         #endregion
+
+      
+
     }
 }
