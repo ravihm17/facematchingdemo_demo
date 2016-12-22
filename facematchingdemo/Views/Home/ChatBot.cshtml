@@ -1,23 +1,14 @@
-﻿@*@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<p>Use this area to provide additional information.</p>*@
-
+﻿
 @{
     ViewBag.Title = "About";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-@*<h1>Pig Latin Bot</h1>*@
 <script src="~/Scripts/jquery-3.1.1.min.js"></script>
-@*<p>Translates your text to Pig Latin.</p>*@
+
 <div id="webChatControl" style="margin-left:310px; margin-top:13px;"></div>
 
 <script type="text/javascript">
-                //$("#webChatControl").load("https://qnaservice.cloudapp.net/KBService.svc/GetAnswer?kbId=f837da636309475fb1d308948c5305a3&question=Hi");
+                
                 $(document).ready(function () {
                     
                     var controllerUrl = '/Home/Get';
@@ -27,7 +18,6 @@
                         dataType: 'html',
                         contentType: 'application/html; charset=utf-8',
                         success: function (data) {
-                            //alert('Data: ' + data);
                             var chatControl = document.getElementById('webChatControl');
                             chatControl.innerHTML = chatControl.innerHTML + data;
                         }
@@ -36,52 +26,4 @@
                     });
 
 
-                    //function invokeURL() {
-
-                    //    var controllerUrl = '/Home/Get';
-                    //    $.ajax({
-                    //        url: controllerUrl,
-                    //        type: 'POST',
-                    //        dataType: 'html',
-                    //        contentType: 'application/html; charset=utf-8',
-                    //        success: function (data) {
-                    //            alert('Data: ' + data);
-                    //            var chatControl = document.getElementById('webChatControl');
-                    //            chatControl.innerHTML = chatControl.innerHTML + data;
-                    //        }
-                    //    });
-                    //    //qnaInvoke();
-                    //    //var webcontrol = document.getElementById("webChatControl");
-                    //    //document.location.href("https://qnaservice.cloudapp.net/KBService.svc/GetAnswer?kbId=f837da636309475fb1d308948c5305a3&question=Hi");
-                    //}
-
-
-                //function qnaInvoke() {
-                //    alert('qnaInvoke');
-                //    var qnaURL = 'https://qnaservice.cloudapp.net/KBService.svc/GetAnswer?kbId=f837da636309475fb1d308948c5305a3&question=Hi';
-                //    $.ajax({
-                //        url: qnaURL,
-                //        type: 'GET',
-                //        dataType: 'xml',
-                //        contentType: 'application/xml; charset=utf-8',
-                //        success: function () {
-                //            alert("QNA called successfully: ");
-                //        }
-                //    });
-                //}
 </script>
-@*<!DOCTYPE html>
-<html>
-<head>
-    <title>Pig Latin Bot</title>
-    <meta charset="utf-8" />
-</head>
-<div class="row">
-    <div class="col-md-4">        
-        <body style="font-family:'Segoe UI'" >
-            
-           
-        </body>
-    </div>
-</div>
-</html>*@

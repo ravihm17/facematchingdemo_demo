@@ -13,11 +13,9 @@
             <table>
                 <tr>
                 <td>@Html.Label("Username", new { @class = "col-md-2 control-label" })</td>
-                <td>@Html.TextBox("txtUserName", null, new { @class = "text-field" })</td>
+                <td>@Html.TextBox("txtUserName", null, new { @class = "form-control" })</td>
               </tr>
             </table>
-            
-           
         </div>
 
         <div id="Camera-CaptureDiv" style="width:620px;margin-top:13px;height:640px;margin-left:100px;">
@@ -40,24 +38,16 @@
                     <td>
                         
                     </td>
-
-                    @*<td>
-                            <input type="button" value="MatchFind" id="MatchFindBtn" name="MatchFindBtn" onclick="MatchFindFunction();" />
-                        </td>*@
                 </tr>
             </table>
-
         </div>
-
     
 
-  @section scripts
+ @section scripts
 {
         <script src="@Url.Content("~/Scripts/jquery.webcam.js")">
         </script>
-    <script>
-
-       
+    <script>       
             $("#Camera").webcam({
 
                 width: 800,
@@ -69,11 +59,20 @@
                 },
 
                 onCapture: function () {
-                    debugger;                  
-                    var href = '@Url.Action("Capture", "Register")?username=' + $('#txtUserName').val();
+
+                    var username= $('#txtUserName').val();
+                    if (username == null || username == "")
+                    {
+                        alert("please enter username");
+                    }
+                    else
+                    {
+                        var href = '@Url.Action("Capture", "Register")?username=' + username;
                     webcam.save(href);
                     
                     alert("Image Saved & Registered Successfully");
+                    window.location.href = '@Url.Action("ChatBot", "Home")';
+                    }
                    
                     //MatchFindFunction();
                 },
@@ -84,9 +83,5 @@
 
     }
 
-
 </div>
 
-@*@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}*@

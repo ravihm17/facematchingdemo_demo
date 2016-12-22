@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -11,17 +9,19 @@ using Microsoft.Owin.Security;
 using facematchingdemo.Models;
 using System.IO;
 using System.Collections.Generic;
+using Microsoft.ProjectOxford.Face;
+using System.Web.UI.WebControls;
+using System.Globalization;
+using System.Security.Claims;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Collections.Specialized;
 using System.Runtime.CompilerServices;
-using Microsoft.ProjectOxford.Face;
 //using Microsoft.ProjectOxford.Face.Contract;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Collections;
-using System.Web.UI.WebControls;
 using System.Text;
 using System.Web.UI;
 using System.Runtime.InteropServices;
@@ -92,12 +92,7 @@ namespace facematchingdemo.Controllers
 
             catch (FaceAPIException ex)
             {
-                //ViewData["ExceptionMsg"] = ex.ErrorMessage;
-                // ViewBag.MyExceptionString = ex.ErrorMessage;
-                // return ViewBag.MyExceptionString;
-                //string errorMsg = ex.ErrorMessage;
-                //return RedirectToAction("Error", "Home", new { errorMsg: errorMsg });
-
+               
                 Errormsg = ex.ErrorMessage;
                 return RedirectToAction("Error", "Home", new { Errormsg = Errormsg }).ToString();
 

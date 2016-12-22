@@ -1,53 +1,29 @@
-﻿@*<div id="divRegister" style="width:420px;margin-top:13px;margin-left:100px;">
-    <table>
-        <tr>
-            <td>@Html.Label("UserName", new { @class = "col-md-2 control-label" })</td>
-            <td>@Html.TextBox("txtUserName", null, new { @class = "text-field" })</td>
-        </tr>
-        <tr>
-            <td>@Html.Label("Password", new { @class = "col-md-2 control-label" })</td>
-            <td>@Html.TextBox("txtPassword", null, new { @class = "text-field" })</td>
-        </tr>
-    </table>
-
-
-
-</div>*@
-
-@section scripts
+﻿@section scripts
 {
 
     <script src="@Url.Content("~/Scripts/jquery.webcam.js")">
     </script>
 
     <script>
-        //function LoginBtnFunction() {
-        //    $("#Camera-CaptureDiv").show();
-        //}
 
         function MatchFindFunction() {
-            //debugger;
+
             $.ajax({
                 type: "POST",
-                //url: "/Home/FindSimilarMatchFun",
                 url: "/Home/FindSimilarImages",
                 contentType: "application/text; charset=utf-8",
                 dataType: "text",
                 success: function (data) {
                     alert('Return Value:' + data);
-                    //alert(window.location.pathname);
                     if (data == "found") {
-                        //alert("window.location.host");
-                        //document.location.href = "http" + window.location.host + "Home/About";
-                        //alert("hi");
+
                         window.location.href = '@Url.Action("ChatBot", "Home")';
                     }
                     else
                     {
-                        //document.location.href = "http" + window.location.host + "Home/Index";
-                        //"http" + window.location.host + "Home/About";
-                        //window.location.href = '@*@Url.Action("Login", "Account")*@';
-                        alert("no match found raj");
+
+                        alert("no match found ");
+                        window.location.href = '@Url.Action("Register", "Account")';
                     }
                 }
             });
@@ -64,10 +40,8 @@
              onTick: function () { },
              onSave: function () {
              },
-             onCapture: function () {
-                 //alert("capture");
-                 webcam.save("@Url.Content("~/Home/Capture")/");
-                // alert("after capture");
+             onCapture: function () {                
+                 webcam.save("@Url.Content("~/Home/Capture")/");              
                  MatchFindFunction();
              },
              debug: function () { },
@@ -77,24 +51,6 @@
 }
 
 <div id="webChatControl"></div>
-
-@*<div id="HeadDiv" style="text-align:center;height:100px;width:100%;background-color:aqua;margin-left:0px">
-
-        <label for="Heading" style="font-size:15px;color:black">FACE MATCHING</label>
-        <div id="Reg_LogDiv" style="padding-left:1000px;padding-top:50px">
-            <table>
-                <tr>
-                    <td>
-                        <input type="button" value="Register" id="MatchFindBtn" name="RegisterBtn" onclick="RegisterBtnFunction();" />
-                    </td>
-                    <td>
-                        <input type="button" value="Login" id="LoginBtn" name="LoginBtn" onclick="LoginBtnFunction();" />
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>*@
-
 
 <div id="Camera-CaptureDiv" style="width:420px;margin-top:13px;margin-left:200px;">
     <table>
@@ -116,11 +72,8 @@
             <td>
                 <input type="button" value="Capture" class="btn-block" style="margin-left:250px;" onclick="webcam.capture();" />
             </td>
-
-            @*<td>
-                    <input type="button" value="Register" id="btnRegister" name="btnRegister" onclick="MatchFindFunction();" />
-                </td>*@
+          
         </tr>
     </table>
-    @*Live Camera*@
+    
 </div>

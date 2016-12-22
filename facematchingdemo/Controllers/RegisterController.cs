@@ -1,11 +1,11 @@
 ﻿using System.IO;
 using System;
+using System.Web.Mvc;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Web;
-using System.Web.Mvc;
 using System.Collections.Specialized;
 using System.Runtime.CompilerServices;
 using System.Linq;
@@ -28,27 +28,12 @@ namespace facematchingdemo.Controllers
 {
     public class RegisterController : Controller
     {
-        // GET: Register
-        //public ActionResult Register()
-        //{
-        //    return View();
-        //}
 
         string userName = string.Empty;
-        //[HttpPost]
-        //public void SaveCapturedImage(string txtUserName)
-        //{
-        //    userName = txtUserName.ToString();
-        //}
-        //[HttpPost]
+       
         public ActionResult Capture(string username)
         {
-            // userName = txtUserName.ToString();
-            //userName= fc["txtUserName"].ToString();
-            // userName = Request["txtUserName"].ToString();
-            //userName = Request.Form["txtUserName"].ToString();
-            //userName = para1;
-            //userName= String.Format("{0}", Request.Form["txtUserName"]);
+            
             userName = username.ToString();
             var stream = Request.InputStream;
             string dump;
@@ -56,18 +41,13 @@ namespace facematchingdemo.Controllers
             using (var reader = new StreamReader(stream))
                 dump = reader.ReadToEnd();
 
-
             if (!Directory.Exists(@"C:/Image/"))
                     Directory.CreateDirectory(@"C:/Image/");
-            // var path = "~/"+ userName +".jpg";       
+              
             var path = "C:/Image/" + userName + ".jpg"; 
-             //path = Server.MapPath(path);
+             
             System.IO.File.WriteAllBytes(path, String_To_Bytes2(dump));
-            // ViewBag["path"]= userName+".jpg";
-
-            // path.CopyTo(Server.MapPath(0,@"C:\Image\")"));
-            // return Json("success");
-            //DirectoryInfo DirInfo = new DirectoryInfo(@"C:\Image");
+            
             return View();
            
         }
@@ -84,12 +64,5 @@ namespace facematchingdemo.Controllers
             return bytes;
 
         }
-
-        //public string SaveImages()
-        //{
-
-
-        //}
-
     }
 }
